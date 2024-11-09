@@ -1,0 +1,37 @@
+Evento - Escursão Aparecida do Norte, 17/18 onibus
+Controle de venda e da viagem
+3 igrejas na paróquia
+Cada onibus um coordenador
+Secretaria de cada igreja
+Tabela de reservas gerais
+Tabela de lista de espera
+	Nome, documento, outros passageiros
+	Onibus do coordenador escolhido
+	Pago ou não
+
+Venda	
+Sistema informaria o coordenador sobre a reserva destinado a ele
+Coordenador iria na lista de espera e informaria que pegou a solicitação, e as informações seriam direcionadas para a lista geral, informando a secretaria
+Mapa de onibus de poltronas ocupadas
+Verificando a disposição de lugares
+Pessoas sem coordenador especifico, o coordenador poderia direcionar para o onibus que esta responsavel
+Controle de pagamento, forma de pagamento, confirmar pagamento
+
+Embarque - 02:30 horas
+Bilhete enviado para o passageiro para dar baixa(QRCode), marcar a presença
+
+Volta
+Marcação para volta, rastreador/coordenador marca a chegada e o geoposicionamento, direionar a volta do passageiro para o embarque.(Pessoas que se perdem)
+
+Adiquirir ingresso - registro de pagamento
+Secretaria ou Coordenadores  
+Cartão - Secretaria
+Dinheiro - Coordenador
+
+Demanda de ônibus
+Informar o número de onibus a serem locados
+Informar as vagas restantes de cada ônibus
+
+
+
+

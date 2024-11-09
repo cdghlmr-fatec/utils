@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "672279ac90460a532721ac85"
+  },
+  "data": {
+    "$date": "2023-10-12T00:00:00.000Z"
+  },
+  "destino": "Santuário de Aparecida",
+  "onibus": [
+    {
+      "onibus_id": {
+        "$oid": "60d5f6f8f1f1a85c4c4d6f18"
+      },
+      "reservas": [
+        {
+          "passageiro_nome": "João da Silva",
+          "passageiro_idade": 30,
+          "status": "confirmado",
+          "acompanhantes": [
+            {
+              "nome": "Maria da Silva",
+              "tipo_documento": "RG",
+              "numero_documento": "123456789"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lista_espera": [
+    {
+      "passageiro_nome": "Ana Souza",
+      "data_reserva": {
+        "$date": "2023-10-10T00:00:00.000Z"
+      }
+    }
+  ],
+  "chamadas": [
+    {
+      "coordenador_id": {
+        "$oid": "60d5f6f8f1f1a85c4c4d6f19"
+      },
+      "passageiros": [
+        {
+          "passageiro_nome": "João da Silva",
+          "presente": true
+        }
+      ],
+      "data_chamada": {
+        "$date": "2023-10-11T00:00:00.000Z"
+      }
+    }
+  ]
+}]

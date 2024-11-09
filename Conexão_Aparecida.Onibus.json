@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "6722792690460a532721ac84"
+  },
+  "placa": "ABC-1234",
+  "capacidade": 40,
+  "responsavel": {
+    "$oid": "60d5f6f8f1f1a85c4c4d6f18"
+  },
+  "status": "disponível"
+}]

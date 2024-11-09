@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "67227bb6507f81f56d5a96d7"
+  },
+  "nome": "Ana Souza",
+  "email": "ana.souza@example.com",
+  "senha": "senha123",
+  "tipo": "administrador",
+  "igreja": "Igreja da Esperança"
+},
+{
+  "_id": {
+    "$oid": "67227bb6507f81f56d5a96d8"
+  },
+  "nome": "Carlos Mendes",
+  "email": "carlos.mendes@example.com",
+  "senha": "senha456",
+  "tipo": "administrador",
+  "igreja": "Igreja da Fé"
+},
+{
+  "_id": {
+    "$oid": "67227bb6507f81f56d5a96d9"
+  },
+  "nome": "Mariana Oliveira",
+  "email": "mariana.oliveira@example.com",
+  "senha": "senha789",
+  "tipo": "administrador",
+  "igreja": "Igreja da Graça"
+},
+{
+  "_id": {
+    "$oid": "67227bb6507f81f56d5a96da"
+  },
+  "nome": "Roberto Santos",
+  "email": "roberto.santos@example.com",
+  "senha": "senha101",
+  "tipo": "administrador",
+  "igreja": "Igreja da Comunhão"
+},
+{
+  "_id": {
+    "$oid": "67227bb6507f81f56d5a96db"
+  },
+  "nome": "Lucia Ferreira",
+  "email": "lucia.ferreira@example.com",
+  "senha": "senha202",
+  "tipo": "administrador",
+  "igreja": "Igreja do Amor"
+}]

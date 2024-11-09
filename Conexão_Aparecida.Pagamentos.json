@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "672279eb90460a532721ac86"
+  },
+  "reserva_id": {
+    "$oid": "60d5f6f8f1f1a85c4c4d6f1a"
+  },
+  "passageiro_nome": "João da Silva",
+  "valor": 150.5,
+  "data_pagamento": {
+    "$date": "2023-10-12T00:00:00.000Z"
+  },
+  "status": "pago"
+}]

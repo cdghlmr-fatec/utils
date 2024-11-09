@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "6722792690460a532721ac84"
+  },
+  "placa": "ABC-1234",
+  "capacidade": 40,
+  "modelo_veiculo": "Mercedes-Benz O500",
+  "responsavel": {
+    "$oid": "60d5f6f8f1f1a85c4c4d6f18"
+  },
+  "status": "disponível",
+  "nome_motorista": "João Pinto"
+},
+{
+  "_id": {
+    "$oid": "6722792690460a532721ac85"
+  },
+  "placa": "DEF-5678",
+  "capacidade": 50,
+  "modelo_veiculo": "Volkswagen 17-230 EOD",
+  "responsavel": {
+    "$oid": "60d5f6f8f1f1a85c4c4d6f19"
+  },
+  "status": "disponível",
+  "nome_motorista": "Maria Oliveira"
+},
+{
+  "_id": {
+    "$oid": "6722792690460a532721ac86"
+  },
+  "placa": "GHI-9012",
+  "capacidade": 30,
+  "modelo_veiculo": "Iveco Urbanway",
+  "responsavel": {
+    "$oid": "60d5f6f8f1f1a85c4c4d6f1a"
+  },
+  "status": "indisponível",
+  "nome_motorista": "Carlos Pereira"
+},
+{
+  "_id": {
+    "$oid": "6722792690460a532721ac87"
+  },
+  "placa": "JKL-3456",
+  "capacidade": 45,
+  "modelo_veiculo": "Scania K320",
+  "responsavel": {
+    "$oid": "60d5f6f8f1f1a85c4c4d6f1b"
+  },
+  "status": "disponível",
+  "nome_motorista": "Ana Costa"
+},
+{
+  "_id": {
+    "$oid": "6722792690460a532721ac88"
+  },
+  "placa": "MNO-7890",
+  "capacidade": 55,
+  "modelo_veiculo": "Marcopolo Paradiso 1200",
+  "responsavel": {
+    "$oid": "60d5f6f8f1f1a85c4c4d6f1c"
+  },
+  "status": "indisponível",
+  "nome_motorista": "Roberto Santos"
+}]

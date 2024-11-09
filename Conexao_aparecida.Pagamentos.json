@@ -1,0 +1,440 @@
+[{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199104"
+  },
+  "valor": 150.5,
+  "data_pagamento": {
+    "$date": "2023-10-12T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "João da Silva",
+  "passageiros": [
+    {
+      "nome": "João da Silva",
+      "tipo_documento": "RG",
+      "numero_documento": "987654321",
+      "data_nascimento": "1993-04-15"
+    },
+    {
+      "nome": "Maria da Silva",
+      "tipo_documento": "RG",
+      "numero_documento": "123456789",
+      "data_nascimento": "2010-07-20"
+    },
+    {
+      "nome": "Carlos da Silva",
+      "tipo_documento": "RG",
+      "numero_documento": "456789123",
+      "data_nascimento": "2012-05-15"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199105"
+  },
+  "valor": 200,
+  "data_pagamento": {
+    "$date": "2023-10-13T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Maria Oliveira",
+  "passageiros": [
+    {
+      "nome": "Pedro Oliveira",
+      "tipo_documento": "RG",
+      "numero_documento": "321654987",
+      "data_nascimento": "1995-03-10"
+    },
+    {
+      "nome": "Ana Oliveira",
+      "tipo_documento": "RG",
+      "numero_documento": "987123456",
+      "data_nascimento": "2015-06-25"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199106"
+  },
+  "valor": 300.75,
+  "data_pagamento": {
+    "$date": "2023-10-14T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Roberto Santos",
+  "passageiros": [
+    {
+      "nome": "Juliana Santos",
+      "tipo_documento": "RG",
+      "numero_documento": "135792468",
+      "data_nascimento": "1988-11-30"
+    },
+    {
+      "nome": "Lucas Santos",
+      "tipo_documento": "RG",
+      "numero_documento": "246813579",
+      "data_nascimento": "2018-09-12"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199107"
+  },
+  "valor": 125,
+  "data_pagamento": {
+    "$date": "2023-10-15T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Fernanda Lima",
+  "passageiros": [
+    {
+      "nome": "Gustavo Lima",
+      "tipo_documento": "RG",
+      "numero_documento": "654987321",
+      "data_nascimento": "1990-08-14"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199108"
+  },
+  "valor": 180,
+  "data_pagamento": {
+    "$date": "2023-10-16T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Cláudia Ferreira",
+  "passageiros": [
+    {
+      "nome": "Samuel Ferreira",
+      "tipo_documento": "RG",
+      "numero_documento": "789456123",
+      "data_nascimento": "1992-02-05"
+    },
+    {
+      "nome": "Bruna Ferreira",
+      "tipo_documento": "RG",
+      "numero_documento": "321987654",
+      "data_nascimento": "2016-12-30"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199109"
+  },
+  "valor": 220,
+  "data_pagamento": {
+    "$date": "2023-10-17T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Felipe Costa",
+  "passageiros": [
+    {
+      "nome": "Roberto Costa",
+      "tipo_documento": "RG",
+      "numero_documento": "123456789",
+      "data_nascimento": "1991-02-18"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199110"
+  },
+  "valor": 175.5,
+  "data_pagamento": {
+    "$date": "2023-10-18T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Luciana Almeida",
+  "passageiros": [
+    {
+      "nome": "Carlos Almeida",
+      "tipo_documento": "RG",
+      "numero_documento": "789123456",
+      "data_nascimento": "1985-09-10"
+    },
+    {
+      "nome": "Sofia Almeida",
+      "tipo_documento": "RG",
+      "numero_documento": "321456987",
+      "data_nascimento": "2012-11-12"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199111"
+  },
+  "valor": 310,
+  "data_pagamento": {
+    "$date": "2023-10-19T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "André Ribeiro",
+  "passageiros": [
+    {
+      "nome": "Laura Ribeiro",
+      "tipo_documento": "RG",
+      "numero_documento": "654789321",
+      "data_nascimento": "1994-05-30"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199112"
+  },
+  "valor": 145.75,
+  "data_pagamento": {
+    "$date": "2023-10-20T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Marcio Silva",
+  "passageiros": [
+    {
+      "nome": "Ricardo Silva",
+      "tipo_documento": "RG",
+      "numero_documento": "987654321",
+      "data_nascimento": "1989-03-05"
+    },
+    {
+      "nome": "Tatiane Silva",
+      "tipo_documento": "RG",
+      "numero_documento": "654321987",
+      "data_nascimento": "2014-08-22"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199113"
+  },
+  "valor": 99.99,
+  "data_pagamento": {
+    "$date": "2023-10-21T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Fernando Dias",
+  "passageiros": [
+    {
+      "nome": "Gustavo Dias",
+      "tipo_documento": "RG",
+      "numero_documento": "258963147",
+      "data_nascimento": "1996-04-28"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199114"
+  },
+  "valor": 195,
+  "data_pagamento": {
+    "$date": "2023-10-22T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Patrícia Gomes",
+  "passageiros": [
+    {
+      "nome": "Mariana Gomes",
+      "tipo_documento": "RG",
+      "numero_documento": "369258147",
+      "data_nascimento": "1993-12-15"
+    },
+    {
+      "nome": "Eduardo Gomes",
+      "tipo_documento": "RG",
+      "numero_documento": "753159486",
+      "data_nascimento": "2011-02-09"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199115"
+  },
+  "valor": 270.25,
+  "data_pagamento": {
+    "$date": "2023-10-23T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Juliana Oliveira",
+  "passageiros": [
+    {
+      "nome": "Gabriel Oliveira",
+      "tipo_documento": "RG",
+      "numero_documento": "147258369",
+      "data_nascimento": "1992-07-17"
+    },
+    {
+      "nome": "Larissa Oliveira",
+      "tipo_documento": "RG",
+      "numero_documento": "951753468",
+      "data_nascimento": "2015-03-22"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199116"
+  },
+  "valor": 165.5,
+  "data_pagamento": {
+    "$date": "2023-10-24T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Robson Lima",
+  "passageiros": [
+    {
+      "nome": "Alice Lima",
+      "tipo_documento": "RG",
+      "numero_documento": "753951486",
+      "data_nascimento": "1994-09-09"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199117"
+  },
+  "valor": 210,
+  "data_pagamento": {
+    "$date": "2023-10-25T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Célia Martins",
+  "passageiros": [
+    {
+      "nome": "Tatiane Martins",
+      "tipo_documento": "RG",
+      "numero_documento": "951258753",
+      "data_nascimento": "2000-01-21"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199118"
+  },
+  "valor": 175.25,
+  "data_pagamento": {
+    "$date": "2023-10-26T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Daniel Santos",
+  "passageiros": [
+    {
+      "nome": "Sérgio Santos",
+      "tipo_documento": "RG",
+      "numero_documento": "159753486",
+      "data_nascimento": "1998-11-11"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199119"
+  },
+  "valor": 125.75,
+  "data_pagamento": {
+    "$date": "2023-10-27T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Fernanda Rocha",
+  "passageiros": [
+    {
+      "nome": "Paula Rocha",
+      "tipo_documento": "RG",
+      "numero_documento": "258147369",
+      "data_nascimento": "1995-05-23"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199120"
+  },
+  "valor": 195.99,
+  "data_pagamento": {
+    "$date": "2023-10-28T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Gustavo Alves",
+  "passageiros": [
+    {
+      "nome": "Nicolas Alves",
+      "tipo_documento": "RG",
+      "numero_documento": "789123456",
+      "data_nascimento": "1987-02-29"
+    },
+    {
+      "nome": "Valentina Alves",
+      "tipo_documento": "RG",
+      "numero_documento": "456789321",
+      "data_nascimento": "2013-06-14"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199121"
+  },
+  "valor": 200,
+  "data_pagamento": {
+    "$date": "2023-10-29T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "João Vitor",
+  "passageiros": [
+    {
+      "nome": "Lara Vitor",
+      "tipo_documento": "RG",
+      "numero_documento": "369258147",
+      "data_nascimento": "1990-10-20"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199122"
+  },
+  "valor": 250.25,
+  "data_pagamento": {
+    "$date": "2023-10-30T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Carla Andrade",
+  "passageiros": [
+    {
+      "nome": "Victor Andrade",
+      "tipo_documento": "RG",
+      "numero_documento": "753159846",
+      "data_nascimento": "1999-03-15"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6725201cfb33cddd23199123"
+  },
+  "valor": 130,
+  "data_pagamento": {
+    "$date": "2023-10-31T00:00:00.000Z"
+  },
+  "status": "pago",
+  "responsavel_reserva": "Alberto Lima",
+  "passageiros": [
+    {
+      "nome": "Júlia Lima",
+      "tipo_documento": "RG",
+      "numero_documento": "258963147",
+      "data_nascimento": "2002-08-19"
+    }
+  ]
+}]

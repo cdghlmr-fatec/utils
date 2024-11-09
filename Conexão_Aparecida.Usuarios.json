@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "67227bb6507f81f56d5a96d7"
+  },
+  "nome": "string",
+  "email": "string",
+  "senha": "string",
+  "tipo": "administrador",
+  "igreja": "string"
+}]
