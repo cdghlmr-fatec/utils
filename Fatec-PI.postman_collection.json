@@ -1,0 +1,1022 @@
+{
+	"info": {
+		"_postman_id": "a0db9e3e-17d3-41d6-9d54-7453f5726f98",
+		"name": "Fatec-PI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35066661",
+		"_collection_link": "https://lively-crater-554540.postman.co/workspace/danielvor~bb0ff63e-6e25-40e7-8861-369cd28300dc/collection/35066661-a0db9e3e-17d3-41d6-9d54-7453f5726f98?action=share&source=collection_link&creator=35066661"
+	},
+	"item": [
+		{
+			"name": "Admin Requests",
+			"item": [
+				{
+					"name": "Admin Board -  All Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Board - User by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzExMjQzNzIsImV4cCI6MTczMTIxMDc3Mn0.mbRFR_m94LXs8Yb_dSHf1JhyDbiSS9mwEIVInqVfBfA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/admin/672d8bc0b2d2b13dab1d8131",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"672d8bc0b2d2b13dab1d8131"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Board - Ceate User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZTAiLCJpYXQiOjE3MzEwOTE0MzgsImV4cCI6MTczMTE3NzgzOH0.x6yrQjQOlou9rYePcBCQAV8q_f1vi_EYSPTgLREuxFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"teste2\",\r\n    \"email\": \"teste2@gmail.com\",\r\n    \"roles\": [\"ADMIN\", \"SECRETARIA\", \"COORDENADOR\"],\r\n    \"password\": \"12345678\",\r\n    \"phone\": \"+5511987654321\",\r\n    \"church\": \"Igreja Batista em teste2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/admin/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Board - Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWx2b3IiLCJpYXQiOjE3MzExMjY0NTgsImV4cCI6MTczMTIxMjg1OH0.7pJiKBhNx0rFgOsolAZuWfOtN3cT7559rLzCFxxUHQg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"danielvor2\",\r\n    \"email\": \"danielvor@gmail.com\",\r\n    \"roles\": [\"ADMIN\"],\r\n    \"password\": \"12345678\",\r\n    \"phone\": \"+5511987654321\",\r\n    \"church\": \"Igreja Batista danielvor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/admin/update/672d8be6b2d2b13dab1d8133",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"update",
+								"672d8be6b2d2b13dab1d8133"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Board - DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZTAiLCJpYXQiOjE3MzEwOTE0MzgsImV4cCI6MTczMTE3NzgzOH0.x6yrQjQOlou9rYePcBCQAV8q_f1vi_EYSPTgLREuxFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"nescau\",\r\n    \"email\": \"nescau-new@gmail.com\",\r\n    // \"roles\": [\"ADMIN\", \"SECRETARIA\", \"COORDENADOR\"],\r\n    \"password\": \"12345678\",\r\n    \"phone\": \"+5511987654321\",\r\n    \"church\": \"Igreja Batista Dog Town\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/admin/delete/672e5d8414b3570d37188511",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"delete",
+								"672e5d8414b3570d37188511"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Secretaria Requests",
+			"item": [
+				{
+					"name": "Onibus",
+					"item": [
+						{
+							"name": "All Onibus",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/secretaria/onibus",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"onibus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "One Onibus",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/secretaria/onibus/67302ccf3c25cb1ccc8508aa",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"onibus",
+										"67302ccf3c25cb1ccc8508aa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Onibus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"plate\":\"MNOP-3456\",\r\n    \"capacity\": 100,\r\n    \"model\": \"Modelo4\",\r\n    \"driverName\":\"Motorista4\",\r\n    \"status\":\"Disponível\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/secretaria/onibus/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"onibus",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Onibus",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"plate\":\"ABCD-1234\",\r\n    \"capacity\": 100,\r\n    \"model\": \"Modelo1\",\r\n    \"driverName\":\"Motorista1\",\r\n    \"status\":\"Disponível\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/secretaria/onibus/67302ccf3c25cb1ccc8508aa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"onibus",
+										"67302ccf3c25cb1ccc8508aa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Onibus",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/secretaria/onibus/67302f35bd9d4351e55a75df",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"onibus",
+										"67302f35bd9d4351e55a75df"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Excursão",
+					"item": [
+						{
+							"name": "All Excursão",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/secretaria/excursao",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"excursao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "One Excursão",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/secretaria/excursao/67303840fe26576fbe1f32a8",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"excursao",
+										"67303840fe26576fbe1f32a8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Excursão",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTMyMzEsImV4cCI6MTczMTI5OTYzMX0.cnrUe319IXPWKDeFbNNdklYhz756VyPHjPX_8aOsRW8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2025-01-01\",\r\n    \"destination\": \"Aparecida do Norte - Região Oeste\",\r\n    \"busIds\": [\"bus9\", \"bus10\"],\r\n    \"reservations\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/secretaria/excursao",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"excursao"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Excursão",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2025-01-01\",\r\n    \"destination\": \"Aparecida do Norte\",\r\n    \"busIds\": [\"bus1\", \"bus2\"],\r\n    \"reservations\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/secretaria/excursao/67303840fe26576fbe1f32a8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"excursao",
+										"67303840fe26576fbe1f32a8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Excursão",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/secretaria/excursao/67302f35bd9d4351e55a75df",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"excursao",
+										"67302f35bd9d4351e55a75df"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Secretaria Board",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTMyMzEsImV4cCI6MTczMTI5OTYzMX0.cnrUe319IXPWKDeFbNNdklYhz756VyPHjPX_8aOsRW8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/secretaria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"secretaria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coordenador Requests",
+			"item": [
+				{
+					"name": "Reservas",
+					"item": [
+						{
+							"name": "All Reservas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/coordenador/reservas",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"coordenador",
+										"reservas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "One Reserva",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/coordenador/reservas/67304807f696960ae3b43f7d",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"coordenador",
+										"reservas",
+										"67304807f696960ae3b43f7d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Reserva",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTczNjEsImV4cCI6MTczMTMwMzc2MX0.SIX9hkNS8OGScSJrfTIiCeGesPnCU66DWzs2hs1nJGg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"12345\",\r\n    \"excursionId\": \"67890\",\r\n    \"busId\": \"jklmno\",\r\n    \"reservationDate\": \"2024-11-10\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/coordenador/reservas",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"coordenador",
+										"reservas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Reserva",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"12345\",\r\n    \"excursionId\": \"67890\",\r\n    \"busId\": \"abcdefghi\",\r\n    \"reservationDate\": \"2024-11-10\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/coordenador/reservas/67304807f696960ae3b43f7d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"coordenador",
+										"reservas",
+										"67304807f696960ae3b43f7d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Reserva",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/coordenador/reservas/673048cbf696960ae3b43f7e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"coordenador",
+										"reservas",
+										"673048cbf696960ae3b43f7e"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Pagamentos",
+					"item": [
+						{
+							"name": "All Pagamentos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/pagamentos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pagamentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "One Reserva Copy",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTAzOTMsImV4cCI6MTczMTI5Njc5M30.sxMSshorEJ_E_X3W2yJZZBiexENrO-1uFUzk7p5HZog",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/secretaria/excursao/67303840fe26576fbe1f32a8",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"secretaria",
+										"excursao",
+										"67303840fe26576fbe1f32a8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Reserva Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMTczNjEsImV4cCI6MTczMTMwMzc2MX0.SIX9hkNS8OGScSJrfTIiCeGesPnCU66DWzs2hs1nJGg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"reservationId\": \"reservation1\",\r\n    \"passengerName\": \"Ceci\",\r\n    \"amount\": 678.90,\r\n    \"paymentDate\": \"2024-11-10\",\r\n    \"status\": \"Confirmado\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/pagamentos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pagamentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Reserva Copy",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"reservationId\": \"reservation1\",\r\n    \"passengerName\": \"Daniel Rodrigues\",\r\n    \"amount\": 678.9,\r\n    \"paymentDate\": \"2024-11-10\",\r\n    \"status\": \"Confirmado\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/pagamentos/673049fbd02f4c3fcc1a1f25",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pagamentos",
+										"673049fbd02f4c3fcc1a1f25"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Pagamento",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEyMDgyNjAsImV4cCI6MTczMTI5NDY2MH0.fz0k7pIkN15_4otOHExxHcO_PkBwbG0kjkatQy-IRnA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/pagamentos/67304a36d02f4c3fcc1a1f26",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pagamentos",
+										"67304a36d02f4c3fcc1a1f26"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Coordenador Board",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWwiLCJpYXQiOjE3MzEwMzQ4MTgsImV4cCI6MTczMTEyMTIxOH0.fZ5ZkKmfqBAvqfm5nIDvyMIj7_3GwDYnjWqz1xZgq7A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/coordenador",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"coordenador"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"oliveira0196\",\n    \"email\": \"oliveira0196@gmail.com\",\n    \"roles\": [\"ADMIN\",\"COORDENADOR\"],\n    \"password\": \"12345678\",\n    \"phone\": \"+5511987654321\",\n    \"church\": \"Igreja Batista em oliveira0196\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"username\": \"daniel\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"oliveira0196@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/send-password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"send-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Public",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:json-web-token}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/test/public",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"public"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Private",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjZWNpIiwiaWF0IjoxNzMxMDkxNzY2LCJleHAiOjE3MzExNzgxNjZ9.5zSbgYcyFjj7iZeXs0dwHsEIRLErUixmHHRJE838ieM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/test/private",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"private"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
